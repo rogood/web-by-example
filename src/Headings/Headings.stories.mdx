@@ -1,0 +1,21 @@
+<Meta title="Headings/H1/Docs" />
+
+# Headings
+
+
+## Usage
+```html
+<h1>Main Heading</h1>
+```
+
+## Testing
+```typescript
+it('should render the heading', () => {
+    render(<h1>Main heading</h1>);
+
+    expect(screen.getByRole('heading', { level: 1, name: 'Main heading' })).toBeInTheDocument();
+})
+```
+
+## Accessibility Guidelines
+https://www.w3.org/WAI/tutorials/page-structure/headings/
